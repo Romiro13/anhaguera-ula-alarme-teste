@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3>Arquitetura de computadores, teste de ULA - Unidade Lógica e Aritmética</h3>
+<br>
+<form method="post">
+  {{ form.hidden_tag() }}
+  {{ form.portaA.label }}
+  {{ form.portaA() }}
+  {{ form.portaB.label }}
+  {{ form.portaB() }}
+  {{ form.alarme.label }}
+  {{ form.alarme() }}
+  {{ form.submit() }}
+</form>
+
+<br><br>
+
+{% if result %}
+<img src="{{ url_for('static', filename='images/alarme.gif') }}" class="img-thumbnail" width="200" alt="200">
+{% else %}
+  {% if alarme %}
+    <p>Alarme não disparou!</p>
+  {% else %}
+    <p>Alarme desligado</p>
+  {% endif %}
+{% endif %}
+
+{% endblock %}
