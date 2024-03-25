@@ -65,5 +65,5 @@ def page_not_found(e):
     return render_template("error_handler.html", code=500)
 
 
-# if __name__ == "__main__":
-#     app.run()
+if __name__ == "__main__":
+    app.run(debug=True)

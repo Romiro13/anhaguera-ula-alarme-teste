@@ -1,4 +1,4 @@
-## Alarme ULA demonstration
+## Alarme ALU - Arithmetic Logic Unit demonstration
 
 ```sh
 # 1 - Create environment
