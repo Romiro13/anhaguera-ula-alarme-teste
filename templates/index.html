@@ -5,13 +5,18 @@
 <br>
 <form method="post">
   {{ form.hidden_tag() }}
-  {{ form.portaA.label }}
-  {{ form.portaA() }}
-  {{ form.portaB.label }}
-  {{ form.portaB() }}
-  {{ form.alarme.label }}
-  {{ form.alarme() }}
-  {{ form.submit() }}
+  {{ form.portaA.label(class="form-label h6") }}
+  {{ form.portaA(class="form-control") }}
+  {{ form.portaB.label(class="form-label h6") }}
+  {{ form.portaB(class="form-control") }}
+  {{ form.logicA.label(class="form-label h6") }}
+  {{ form.logicA(class="form-control") }}
+  {{ form.alarme.label(class="form-label h6") }}
+  {{ form.alarme(class="form-control") }}
+  {{ form.logicB.label(class="form-label h6") }}
+  {{ form.logicB(class="form-control") }}
+  <br>
+  {{ form.submit(class="btn btn-primary") }}
 </form>
 
 <br><br>
